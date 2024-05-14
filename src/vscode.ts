@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { debugInTermial, runInTerminal } from './run';
+import { debugInTermial, runInTerminalv2 } from './run';
 
 export class RunVitestCommand implements vscode.Command {
     static ID = 'vitest.runTest';
@@ -26,7 +26,7 @@ export class DebugVitestCommand implements vscode.Command {
 vscode.commands.registerCommand(
     RunVitestCommand.ID,
     (text: string, filename: string) => {
-        runInTerminal(text, filename);
+        runInTerminalv2(text, filename);
     }
 );
 

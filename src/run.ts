@@ -25,6 +25,25 @@ export function runInTerminal(text: string, filename: string) {
     terminal.show();
 }
 
+function buildRunConfig(
+    cwd: string,
+    text: string,
+    filename: string
+): vscode.TerminalOptions {
+    return {
+        name: 'Run vitest case',
+        cwd,
+        shellPath: 'npx',
+        shellArgs: buildCdArgs(JSON.stringify(path.dirname(filename))).concat(buildVitestArgs(text))
+    };
+}
+
+export function runInTerminalv2(text: string, filename: string) {
+    const casePath = path.dirname(filename);
+    const config = buildRunConfig(casePath, text, filename);
+    vscode.window.createTerminal(config).show();
+}
+
 function buildDebugConfig(
     cwd: string,
     text: string
