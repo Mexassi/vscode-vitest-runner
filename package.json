@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "icon": "logo.png",
   "license": "MIT",
-  "description": "Vitest case runner. Fork of the original",
+  "description": "Vitest case runner. Fork of the original https://github.com/explore-frontend/vscode-vitest-runner",
   "publisher": "Mexassi",
   "engines": {
     "vscode": "^1.89.0"
