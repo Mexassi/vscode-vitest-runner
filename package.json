@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "icon": "logo.png",
   "license": "MIT",
-  "description": "Vitest case runner.",
+  "description": "Vitest case runner. Fork of the original",
   "publisher": "mexassi85",
   "engines": {
     "vscode": "^1.89.0"
@@ -19,7 +19,7 @@
     "runner",
     "codelens"
   ],
-  "repository": "git@github.com:mexassi85/vscode-vitest-runner.git",
+  "repository": "git@github.com:Mexassi/vscode-vitest-runner.git",
   "author": "Mexassi <mexassi85@gmail.com>",
   "activationEvents": [
     "onLanguage:typescript",
